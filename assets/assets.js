@@ -83,6 +83,12 @@ export const workData = [
         bgImage: '/chat.png',
         link:"https://chat-application-mern-m2w0.onrender.com/",
     },
+        {
+        title: 'Task-Manager',
+        description: 'mern stack',
+        bgImage: '/task.png',
+        link:"https://task-manager-frontend-i87s.onrender.com/",
+    },
     {
         title: 'Classic Investments',
         description: 'React JS',
@@ -104,9 +110,9 @@ export const workData = [
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Frontend development', description: 'Frontend development is the process of building, user interface...', link: '' },
-    { icon: assets.web_icon, title: 'backend development', description: 'Backend development refers to the server-side of web development...', link: '' },
-    { icon: assets.web_icon, title: 'Database', description: 'Using Database sql and nosql...', link: '' },
+    { icon: assets.web_icon, title: 'Frontend development', description: 'I build responsive, user-friendly web interfaces with modern frontend technologies..', link: '' },
+    { icon: assets.web_icon, title: 'backend development', description: 'I build robust RESTful APIs and backend systems using Node.js, Express, and MongoDB..', link: '' },
+    { icon: assets.web_icon, title: 'Database', description: 'I design and manage efficient, scalable databases using MongoDB and Mongoose..', link: '' },
 ]
 
 export const infoList = [

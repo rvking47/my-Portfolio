@@ -81,7 +81,7 @@ export const workData = [
         title: 'ChatApplication',
         description: 'mern stack, socket.io',
         bgImage: '/chat.png',
-        link:"https://chat-application-mern-m2w0.onrender.com/",
+        link:"https://chat-application-mern-stack-7udc.onrender.com/",
     },
         {
         title: 'Task-Manager',

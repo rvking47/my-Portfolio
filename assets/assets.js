@@ -84,6 +84,12 @@ export const workData = [
         link:"https://chat-application-mern-m2w0.onrender.com/",
     },
         {
+        title: 'Real-Time Code Editor',
+        description: 'mern stack, sokect.io',
+        bgImage: '/code-editor.png',
+        link:"https://real-time-code-editor-zenc.onrender.com/",
+    },
+        {
         title: 'Task-Manager',
         description: 'mern stack',
         bgImage: '/task.png',

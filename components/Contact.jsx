@@ -37,7 +37,7 @@ const Contact = () => {
     initial={{ opacity: 0 }} 
       whileInView={{ opacity: 1 }} 
       transition={{ duration: 1 }} 
-    id='contact' className='w-full px-[12%] py-10 scroll-mt-20 bg-[url("/footer-bg-color.png")] bg-no-repeat bg-center bg-[length:90%_auto] dark:bg-none'>
+    id='contact' className='w-full px-6 sm:px-[8%] lg:px-[12%] py-10 scroll-mt-20 bg-[url("/footer-bg-color.png")] bg-no-repeat bg-center bg-[length:90%_auto] dark:bg-none'>
 
       <motion.h4 
       initial={{ y: -20, opacity: 0 }} 
@@ -58,7 +58,7 @@ const Contact = () => {
       whileInView={{ opacity: 1 }}
       transition={{ delay: 0.7, duration: 0.5 }}
       className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>
-      I'd love to hear from you! If you have any questions, comments, or feedback, please use the form below.</motion.p>
+      Have a project, internship, or full-stack role in mind? Send me a message or connect with me on LinkedIn and GitHub.</motion.p>
 
       <motion.form
       initial={{ opacity: 0 }}

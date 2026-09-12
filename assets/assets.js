@@ -81,7 +81,7 @@ export const workData = [
         title: 'AI Post Social',
         description: 'MERN, Next.js, AI posts, scheduling, integrations',
         bgImage: '/work-1.png',
-        link:"https://aiposts.social/",
+        link:"https://www.aipost.social/",
     },
     {
         title: 'ChatApplication',

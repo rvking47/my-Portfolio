@@ -78,32 +78,38 @@ export const assets = {
 
 export const workData = [
     {
+        title: 'AI Post Social',
+        description: 'MERN, Next.js, AI posts, scheduling, integrations',
+        bgImage: '/work-1.png',
+        link:"https://aiposts.social/",
+    },
+    {
         title: 'ChatApplication',
-        description: 'mern stack, socket.io',
+        description: 'MERN stack, Socket.io, real-time messaging',
         bgImage: '/chat.png',
         link:"https://chat-application-mern-m2w0.onrender.com/",
     },
         {
         title: 'Real-Time Code Editor',
-        description: 'mern stack, sokect.io',
+        description: 'MERN stack, Socket.io, collaborative coding',
         bgImage: '/code-editor.png',
         link:"https://real-time-code-editor-zenc.onrender.com/",
     },
         {
         title: 'Task-Manager',
-        description: 'mern stack',
+        description: 'MERN stack, dashboard, CRUD workflows',
         bgImage: '/task.png',
         link:"https://task-manager-frontend-i87s.onrender.com/",
     },
     {
         title: 'Classic Investments',
-        description: 'React JS',
+        description: 'React JS business website',
         bgImage: '/classic_inves.png',
         link:"https://demo.geur.in/",
     },
     {
         title: 'E-commerce',
-        description: 'Frontend Based',
+        description: 'Responsive frontend website',
         bgImage: '/e-com.png',
         link:"https://techcoder.co.in/",
     },
@@ -116,15 +122,16 @@ export const workData = [
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Frontend development', description: 'I build responsive, user-friendly web interfaces with modern frontend technologies..', link: '' },
-    { icon: assets.web_icon, title: 'backend development', description: 'I build robust RESTful APIs and backend systems using Node.js, Express, and MongoDB..', link: '' },
-    { icon: assets.web_icon, title: 'Database', description: 'I design and manage efficient, scalable databases using MongoDB and Mongoose..', link: '' },
+    { icon: assets.web_icon, title: 'Frontend Development', description: 'Responsive React and Next.js interfaces with clean layouts, reusable components, and mobile-first UI.', link: '' },
+    { icon: assets.code_icon, title: 'Backend APIs', description: 'REST APIs with Node.js, Express, authentication, file uploads, email flows, and production-ready validation.', link: '' },
+    { icon: assets.project_icon, title: 'AI & Automation', description: 'AI-assisted content workflows, scheduling systems, real-time updates, and integration-focused product features.', link: '' },
+    { icon: assets.edu_icon, title: 'Database Design', description: 'MongoDB and MySQL data models for scalable CRUD apps, dashboards, and business workflows.', link: '' },
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Skills', description: 'HTML, CSS, JavaScript Bootstrap, Ract Js, Node Js, MongoDB, MySQL, Express Js, Php, Laravel' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'BCA (Bachelor of Computer Application)' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Certificate', description: 'Full Stack Web Development , MERN Stack Development' }
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Skills', description: 'React, Next.js, Node.js, Express, MongoDB, MySQL, Socket.io, REST APIs, Tailwind CSS' },
+    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'BCA in Computer Science, MCA ongoing' },
+    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Experience', description: 'MERN Stack Developer at Codemaya, building AI Post and business web products' }
 ];
 
 export const toolsData = [

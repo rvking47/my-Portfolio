@@ -42,8 +42,9 @@ const Work = ({isDarkMode}) => {
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
             key={index}
-            className='min-h-72 sm:min-h-80 bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group overflow-hidden border border-gray-200 dark:border-white/10'
+            className='min-h-72 sm:min-h-80 bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group overflow-hidden border border-gray-200 shadow-sm dark:border-white/10'
             style={{backgroundImage: `url(${project.bgImage})`}}>
+                <div className='absolute inset-0 bg-black/10 opacity-0 transition duration-500 group-hover:opacity-100'></div>
                 <div className='bg-white w-11/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-4 flex items-center justify-between gap-3 duration-500 group-hover:bottom-7 shadow-lg'>
                     <div>
                         <a href={project.link} target='_blank' rel='noreferrer'><h2 className='font-semibold leading-5'>{project.title}</h2>

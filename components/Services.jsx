@@ -9,7 +9,7 @@ const Services = () => {
     initial={{ opacity: 0 }} 
     whileInView={{ opacity: 1 }} 
     transition={{ duration: 1 }}
-    id="services" className='w-full px-[12%] py-10 scroll-mt-20'>
+    id="services" className='w-full px-6 sm:px-[8%] lg:px-[12%] py-10 scroll-mt-20'>
 
        <motion.h4 
        initial={{ y: -20, opacity: 0 }} 
@@ -23,14 +23,14 @@ const Services = () => {
       whileInView={{ y: 0, opacity: 1 }}
       transition={{ delay: 0.5, duration: 0.5 }}
       className='text-center text-5xl font-Ovo'>
-      My Services</motion.h2>
+      What I Build</motion.h2>
 
       <motion.p 
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ delay: 0.7, duration: 0.5 }}
       className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>
-        I am a Full Stack Web Developer skilled in creating dynamic, responsive, and scalable web applications using modern frontend and backend technologies.</motion.p>
+        I turn product ideas into responsive interfaces, reliable backend APIs, and full-stack workflows that are easy to use and maintain.</motion.p>
 
         <motion.div
         initial={{ opacity: 0 }}
@@ -41,15 +41,15 @@ const Services = () => {
                 <motion.div 
                 whileHover={{scale: 1.05}}
                 key={index}
-                className='border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white'>
+                className='border border-gray-400 rounded-lg px-6 sm:px-8 py-10 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white'>
                     <Image src={icon} alt='' className='w-10'/>
                     <h3 className='text-lg my-4 text-gray-700 dark:text-white'>{title}</h3>
                     <p className='text-sm text-gray-600 leading-5 dark:text-white/80'>
                         {description}
                     </p>
-                    <a href={link} className='flex items-center gap-2 text-sm mt-5'>
-                        Read more <Image alt='' src={assets.right_arrow} className='w-4'/>
-                    </a>
+                    <span className='flex items-center gap-2 text-sm mt-5'>
+                        View focus <Image alt='' src={assets.right_arrow} className='w-4'/>
+                    </span>
                 </motion.div>
             ))}
         </motion.div>

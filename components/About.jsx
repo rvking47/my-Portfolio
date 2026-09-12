@@ -5,7 +5,7 @@ import { motion } from "motion/react"
 
 const About = ({isDarkMode}) => {
   return (
-    <motion.div id='about' className='w-full px-[12%] py-10 scroll-mt-20'
+    <motion.div id='about' className='w-full px-6 sm:px-[8%] lg:px-[12%] py-10 scroll-mt-20'
     initial={{opacity: 0}}
     whileInView={{opacity: 1}}
     transition={{duration: 1}}
@@ -28,7 +28,7 @@ const About = ({isDarkMode}) => {
         initial={{opacity: 0}}
         whileInView={{opacity: 1}}
         transition={{duration: 0.8}}
-        className='flex w-full flex-col lg:flex-row items-center gap-20 my-20'>
+        className='flex w-full flex-col lg:flex-row items-center gap-10 lg:gap-20 my-12 lg:my-20'>
             <motion.div
             initial={{opacity: 0, scale: 0.9}}
             whileInView={{opacity: 1, scale: 1}}
@@ -41,14 +41,14 @@ const About = ({isDarkMode}) => {
             whileInView={{opacity: 1}}
             transition={{duration: 0.6, delay: 0.8}}
             className='flex-1'>
-                <p className='mb-10 max-w-2xl font-Ovo'
-                >I am an experienced Full Stack Web Developer with over a decade of professional expertise in the field. Throughout my career, I have had the privilege of collaborating with prestigious organizations, contributing to their success and growth.</p>
+                <p className='mb-8 max-w-2xl font-Ovo text-gray-700 dark:text-white/80'
+                >I am Rahul Vimal, a MERN Stack Developer working on production web applications at Codemaya. I focus on clean UI, scalable APIs, MongoDB-backed workflows, real-time features with Socket.io, and AI automation features such as post generation, scheduling, and integrations.</p>
 
                 <motion.ul
                 initial={{opacity: 0}}
                 whileInView={{opacity: 1}}
                 transition={{duration: 0.8, delay: 1}}
-                className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl'>
+                className='grid grid-cols-1 sm:grid-cols-3 gap-5 max-w-3xl'>
                     {infoList.map(({icon, iconDark, title, description}, index)=>(
                         <motion.li 
                         whileHover={{scale: 1.05}}
@@ -71,7 +71,7 @@ const About = ({isDarkMode}) => {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ delay: 1.5, duration: 0.6 }}
-                className='flex items-center gap-3 sm:gap-5'>
+                className='flex items-center gap-3 sm:gap-5 flex-wrap'>
                     {toolsData.map((tool, index)=>(
                         <motion.li 
                         whileHover={{ scale: 1.1 }}

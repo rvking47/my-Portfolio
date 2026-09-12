@@ -12,8 +12,9 @@ const ovo = Ovo({
 
 
 export const metadata = {
-  title: "Portfolio - GreatStack",
-  description: "",
+  title: "Rahul Vimal | MERN Stack Developer",
+  description:
+    "Portfolio of Rahul Vimal, a MERN Stack Developer building responsive web apps, scalable APIs, AI workflows, and full-stack products.",
 };
 
 export default function RootLayout({ children }) {

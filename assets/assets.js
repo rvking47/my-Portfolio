@@ -122,16 +122,22 @@ export const workData = [
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Frontend Development', description: 'Responsive React and Next.js interfaces with clean layouts, reusable components, and mobile-first UI.', link: '' },
-    { icon: assets.code_icon, title: 'Backend APIs', description: 'REST APIs with Node.js, Express, authentication, file uploads, email flows, and production-ready validation.', link: '' },
+    { icon: assets.web_icon, title: 'MERN Applications', description: 'Complete MongoDB, Express, React, and Node.js applications with responsive screens and reusable components.', link: '' },
+    { icon: assets.code_icon, title: 'Backend APIs', description: 'REST APIs with authentication, validation, file uploads, email flows, and clean business logic.', link: '' },
     { icon: assets.project_icon, title: 'AI & Automation', description: 'AI-assisted content workflows, scheduling systems, real-time updates, and integration-focused product features.', link: '' },
-    { icon: assets.edu_icon, title: 'Database Design', description: 'MongoDB and MySQL data models for scalable CRUD apps, dashboards, and business workflows.', link: '' },
+    { icon: assets.edu_icon, title: 'Database Workflows', description: 'MongoDB and MySQL data models for scalable CRUD apps, dashboards, and business workflows.', link: '' },
 ]
 
 export const infoList = [
     { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Skills', description: 'React, Next.js, Node.js, Express, MongoDB, MySQL, Socket.io, REST APIs, Tailwind CSS' },
     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'BCA in Computer Science, MCA ongoing' },
     { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Experience', description: 'MERN Stack Developer at Codemaya, building AI Post and business web products' }
+];
+
+export const certificateData = [
+    { title: 'Full Stack Web Development', issuer: 'Professional training / certification', year: 'MERN focused' },
+    { title: 'MERN Stack Development', issuer: 'Project-based development certification', year: 'React, Node.js, MongoDB' },
+    { title: 'IBM SkillsBuild Web Development', issuer: 'IBM SkillsBuild', year: 'Web development learning path' },
 ];
 
 export const toolsData = [

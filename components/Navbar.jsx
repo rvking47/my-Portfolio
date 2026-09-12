@@ -2,7 +2,7 @@ import { assets } from '@/assets/assets'
 import Image from 'next/image'
 import { useEffect, useRef, useState } from 'react'
 
-const links = [['top', 'Home'], ['about', 'About'], ['services', 'Services'], ['work', 'Projects'], ['contact', 'Contact']]
+const links = [['top', 'Home'], ['about', 'About'], ['experience', 'Experience'], ['education', 'Education'], ['work', 'Projects'], ['contact', 'Contact']]
 export default function Navbar({ isDarkMode, setIsDarkMode }) {
   const [open, setOpen] = useState(false)
   const trigger = useRef(null)

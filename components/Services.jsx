@@ -1,8 +1,9 @@
-import { assets, serviceData } from '@/assets/assets'
-import Image from 'next/image'
+import { serviceData } from '@/assets/assets'
+import { CodeXml, Database, Globe, Workflow } from 'lucide-react'
 import React from 'react'
 
 const Services = () => {
+  const icons = [Globe, CodeXml, Workflow, Database]
   return (
     <div
     id="services" className='w-full px-6 sm:px-[8%] lg:px-[12%] py-10 scroll-mt-20'>
@@ -21,20 +22,21 @@ const Services = () => {
 
         <div
         className='grid grid-cols-auto gap-6 my-10'>
-            {serviceData.map(({icon, title, description, link}, index)=>(
+            {serviceData.map(({title, description}, index)=>{
+              const Icon = icons[index]
+              return (
                 <div
                 key={index}
                 className='border border-gray-300 rounded-lg px-6 sm:px-8 py-10 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-2 duration-500 dark:border-white/20 dark:hover:bg-darkHover dark:hover:shadow-white'>
-                    <Image src={icon} alt='' className='w-10'/>
+                    <div className='inline-flex rounded-lg p-3 bg-emerald-50 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300'>
+                      <Icon size={28} strokeWidth={1.75} aria-hidden='true' />
+                    </div>
                     <h3 className='text-lg my-4 text-gray-700 dark:text-white'>{title}</h3>
                     <p className='text-sm text-gray-600 leading-5 dark:text-white/80'>
                         {description}
                     </p>
-                    <span className='flex items-center gap-2 text-sm mt-5'>
-                        View focus <Image alt='' src={assets.right_arrow} className='w-4'/>
-                    </span>
                 </div>
-            ))}
+            )})}
         </div>
 
     </div>

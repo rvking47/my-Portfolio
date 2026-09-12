@@ -134,11 +134,7 @@ export const infoList = [
     { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Experience', description: 'MERN Stack Developer at Codemaya, building AI Post and business web products' }
 ];
 
-export const certificateData = [
-    { title: 'Full Stack Web Development', issuer: 'Professional training / certification', year: 'MERN focused' },
-    { title: 'MERN Stack Development', issuer: 'Project-based development certification', year: 'React, Node.js, MongoDB' },
-    { title: 'IBM SkillsBuild Web Development', issuer: 'IBM SkillsBuild', year: 'Web development learning path' },
-];
+export { certifications as certificateData } from './resume';
 
 export const toolsData = [
     assets.vscode, assets.mongodb,  assets.git

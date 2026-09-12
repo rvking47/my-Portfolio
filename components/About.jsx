@@ -1,4 +1,4 @@
-import { assets, infoList, toolsData } from '@/assets/assets'
+import { assets, certificateData, infoList, toolsData } from '@/assets/assets'
 import Image from 'next/image'
 import React from 'react'
 import { motion } from "motion/react"
@@ -42,7 +42,7 @@ const About = ({isDarkMode}) => {
             transition={{duration: 0.6, delay: 0.8}}
             className='flex-1'>
                 <p className='mb-8 max-w-2xl font-Ovo text-gray-700 dark:text-white/80'
-                >I am Rahul Vimal, a MERN Stack Developer working on production web applications at Codemaya. I focus on clean UI, scalable APIs, MongoDB-backed workflows, real-time features with Socket.io, and AI automation features such as post generation, scheduling, and integrations.</p>
+                >I am Rahul Vimal, a MERN Stack Developer working on production web applications at Codemaya. I enjoy building clean interfaces, scalable APIs, MongoDB-backed workflows, real-time Socket.io features, and AI automation features that solve real product problems.</p>
 
                 <motion.ul
                 initial={{opacity: 0}}
@@ -60,6 +60,23 @@ const About = ({isDarkMode}) => {
                         </motion.li>
                     ))}
                 </motion.ul>
+
+                <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: 1.15, duration: 0.5 }}
+                className='mt-8 max-w-3xl rounded-2xl border border-gray-300 p-5 dark:border-white/20'>
+                    <h4 className='mb-4 font-semibold text-gray-800 dark:text-white'>Certificates</h4>
+                    <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
+                        {certificateData.map((certificate, index)=>(
+                            <div key={index} className='rounded-xl bg-gray-50 p-4 dark:bg-darkHover/30'>
+                                <p className='font-medium text-gray-800 dark:text-white'>{certificate.title}</p>
+                                <p className='text-sm text-gray-600 dark:text-white/70'>{certificate.issuer}</p>
+                                <p className='text-xs text-gray-500 dark:text-white/50'>{certificate.year}</p>
+                            </div>
+                        ))}
+                    </div>
+                </motion.div>
 
                 <motion.h4
                 initial={{ y: 20, opacity: 0 }}

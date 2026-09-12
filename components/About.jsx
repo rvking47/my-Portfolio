@@ -1,70 +1,44 @@
 import { assets, certificateData, infoList, toolsData } from '@/assets/assets'
 import Image from 'next/image'
 import React from 'react'
-import { motion } from "motion/react"
 
 const About = ({isDarkMode}) => {
   return (
-    <motion.div id='about' className='w-full px-6 sm:px-[8%] lg:px-[12%] py-10 scroll-mt-20'
-    initial={{opacity: 0}}
-    whileInView={{opacity: 1}}
-    transition={{duration: 1}}
+    <div id='about' className='w-full px-6 sm:px-[8%] lg:px-[12%] py-10 scroll-mt-20'
     >
-      <motion.h4 
-      initial={{opacity: 0, y: -20}}
-      whileInView={{opacity: 1, y: 0}}
-      transition={{duration: 0.5, delay: 0.3}}
+      <h4
       className='text-center mb-2 text-lg font-Ovo'>
-        Introduction</motion.h4>
+        Introduction</h4>
 
-      <motion.h2 
-      initial={{opacity: 0, y: -20}}
-      whileInView={{opacity: 1, y: 0}}
-      transition={{duration: 0.5, delay: 0.5}}
+      <h2
       className='text-center text-5xl font-Ovo'>
-        About me</motion.h2>
+        About me</h2>
 
-        <motion.div 
-        initial={{opacity: 0}}
-        whileInView={{opacity: 1}}
-        transition={{duration: 0.8}}
+        <div
         className='flex w-full flex-col lg:flex-row items-center gap-10 lg:gap-20 my-12 lg:my-20'>
-            <motion.div
-            initial={{opacity: 0, scale: 0.9}}
-            whileInView={{opacity: 1, scale: 1}}
-            transition={{duration: 0.6}}
-            className='w-64 sm:w-80 rounded-3xl max-w-none'>
-                <Image src={assets.user_image} alt='user' className='w-full rounded-3xl'/>
-            </motion.div>
-            <motion.div 
-            initial={{opacity: 0}}
-            whileInView={{opacity: 1}}
-            transition={{duration: 0.6, delay: 0.8}}
-            className='flex-1'>
+            <div
+            data-tilt className='w-56 sm:w-72 shrink-0 max-w-full'>
+                <Image src='/rahul.webp' width={505} height={606} sizes='(max-width: 640px) 224px, 288px' alt='Rahul Vimal' className='w-full rounded-lg'/>
+            </div>
+            <div
+            className='flex-1 min-w-0'>
                 <p className='mb-8 max-w-2xl font-Ovo text-gray-700 dark:text-white/80'
                 >I am Rahul Vimal, a MERN Stack Developer working on production web applications at Codemaya. I enjoy building clean interfaces, scalable APIs, MongoDB-backed workflows, real-time Socket.io features, and AI automation features that solve real product problems.</p>
 
-                <motion.ul
-                initial={{opacity: 0}}
-                whileInView={{opacity: 1}}
-                transition={{duration: 0.8, delay: 1}}
+                <ul
                 className='grid grid-cols-1 sm:grid-cols-3 gap-5 max-w-3xl'>
                     {infoList.map(({icon, iconDark, title, description}, index)=>(
-                        <motion.li 
-                        whileHover={{scale: 1.05}}
+                        <li
                         className='border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50'
                          key={index}>
                             <Image src={isDarkMode ? iconDark : icon} alt={title} className='w-7 mt-3'/>
                             <h3 className='my-4 font-semibold text-gray-700 dark:text-white'>{title}</h3>
                             <p className='text-gray-600 text-sm dark:text-white/80'>{description}</p>
-                        </motion.li>
+                        </li>
                     ))}
-                </motion.ul>
+                </ul>
 
-                <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: 1.15, duration: 0.5 }}
+                <div
                 className='mt-8 max-w-3xl rounded-2xl border border-gray-300 p-5 dark:border-white/20'>
                     <h4 className='mb-4 font-semibold text-gray-800 dark:text-white'>Certificates</h4>
                     <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
@@ -76,31 +50,24 @@ const About = ({isDarkMode}) => {
                             </div>
                         ))}
                     </div>
-                </motion.div>
+                </div>
 
-                <motion.h4
-                initial={{ y: 20, opacity: 0 }}
-                whileInView={{ y: 0, opacity: 1 }}
-                transition={{ delay: 1.3, duration: 0.5 }}
-                className='my-6 text-gray-700 font-Ovo dark:text-white/80'>Tools I use</motion.h4>
+                <h4
+                className='my-6 text-gray-700 font-Ovo dark:text-white/80'>Tools I use</h4>
 
-                <motion.ul
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ delay: 1.5, duration: 0.6 }}
+                <ul
                 className='flex items-center gap-3 sm:gap-5 flex-wrap'>
                     {toolsData.map((tool, index)=>(
-                        <motion.li 
-                        whileHover={{ scale: 1.1 }}
+                        <li
                         className='flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500'
                          key={index}>
                             <Image src={tool} alt='Tool' className='w-5 sm:w-7'/>
-                        </motion.li>
+                        </li>
                     ))}
-                </motion.ul>
-            </motion.div>
-        </motion.div>
-    </motion.div>
+                </ul>
+            </div>
+        </div>
+    </div>
   )
 }
 

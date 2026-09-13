@@ -6,11 +6,13 @@ const companyProjects = [
     title: 'AI Post', link: 'https://www.aipost.social/',
     summary: 'Social media automation with AI content generation, recurring schedules and publishing workflows.',
     contributions: [
-      'Developed React and Next.js interfaces with Node.js workflows for generation, publishing, retry, repost and media uploads.',
-      'Built WebSocket-driven multi-post generation and responsive management screens with search, filters, pagination and status views.',
-      'Implemented timezone-aware daily, weekly and monthly scheduling, and investigated production reliability issues with Datadog RUM.',
+      'Developed Node.js and Express.js backend workflows and REST APIs for AI post generation, publishing, retry, repost and media uploads, using MongoDB for application data.',
+      'Implemented timezone-aware daily, weekly and monthly recurring schedules, including generation workflows triggered near publishing time.',
+      'Integrated Socket.io and WebSockets for real-time multi-post generation updates, connecting backend processing to post management views.',
+      'Resolved Heroku H12 timeout issues with bounded network requests and hardened URL reachability validation while retaining protections for private and invalid URLs.',
     ],
-    tags: ['React', 'Next.js', 'Node.js', 'MongoDB', 'Socket.io'],
+    technologyLabel: 'Backend technologies & integrations',
+    tags: ['Node.js', 'Express.js', 'MongoDB', 'REST APIs', 'Socket.io / WebSockets', 'Cloudinary', 'Nodemailer', 'Heroku'],
   },
   {
     title: 'Tradeline Supply', link: 'https://tradelinesupply.com/',
@@ -48,7 +50,8 @@ export default function Work() {
             <p className='text-gray-700 dark:text-white/80'>{project.summary}</p>
             <h5 className='font-medium mt-4 mb-2'>My contribution</h5>
             <ul className='list-disc pl-5 space-y-2 text-gray-700 dark:text-white/80'>{project.contributions.map(item => <li key={item}>{item}</li>)}</ul>
-            <ul aria-label='Project technologies and context' className='flex flex-wrap gap-2 mt-4'>{project.tags.map(tag => <li key={tag} className='text-xs border border-gray-300 dark:border-white/20 rounded-md px-2 py-1'>{tag}</li>)}</ul>
+            {project.technologyLabel && <h5 className='font-medium mt-4 mb-2'>{project.technologyLabel}</h5>}
+            <ul aria-label={project.technologyLabel || 'Project context'} className='flex flex-wrap gap-2 mt-3'>{project.tags.map(tag => <li key={tag} className='text-xs border border-gray-300 dark:border-white/20 rounded-md px-2 py-1'>{tag}</li>)}</ul>
           </div>
         </article>)}
       </section>

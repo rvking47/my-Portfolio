@@ -28,6 +28,7 @@ export default function About() {
             <p className='text-sm text-gray-600 dark:text-white/70'>{job.period}</p>
           </div>
           {job.context && <p className='mt-2 text-sm text-emerald-800 dark:text-emerald-300'>{job.context}</p>}
+          {job.company === 'Codemaya' && <a href='/codemaya-offer-redacted.pdf' target='_blank' rel='noreferrer' className='inline-flex items-center gap-2 mt-3 text-sm underline underline-offset-4'>Offer letter (redacted PDF) <ArrowUpRight size={16} aria-hidden='true' /></a>}
           <ul className='list-disc pl-5 mt-4 space-y-2 text-gray-700 dark:text-white/80'>
             {job.highlights.map(point => <li key={point}>{point}</li>)}
           </ul>

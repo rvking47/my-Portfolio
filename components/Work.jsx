@@ -16,9 +16,13 @@ const companyProjects = [
   },
   {
     title: 'Tradeline Supply', link: 'https://tradelinesupply.com/',
-    summary: 'An ongoing company project I contribute to as part of my role at Codemaya.',
-    contributions: ['Working with the Codemaya team on Tradeline Supply Systems as a Full Stack Developer.'],
-    tags: ['Company project', 'Ongoing contribution'],
+    summary: 'A production SaaS project at Codemaya using Nuxt.js on the backend, MySQL, Redis and Cloudflare.',
+    contributions: [
+      'Contribute to backend development with the Codemaya team on Tradeline Supply Systems, working with Nuxt.js and MySQL.',
+      'Work within a production stack that includes database migrations, Redis and Cloudflare.',
+    ],
+    technologyLabel: 'Backend technologies & infrastructure',
+    tags: ['Nuxt.js', 'MySQL', 'Database migrations', 'Redis', 'Cloudflare'],
   },
 ]
 

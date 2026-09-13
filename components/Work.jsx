@@ -22,7 +22,7 @@ const companyProjects = [
       'Work within a production stack that includes database migrations, Redis and Cloudflare.',
     ],
     technologyLabel: 'Backend technologies & infrastructure',
-    tags: ['Nuxt.js', 'MySQL', 'Database migrations', 'Redis', 'Cloudflare'],
+    tags: ['Nuxt.js', 'MySQL', 'Database migrations', 'DTOs (Data Transfer Objects)', 'Redis', 'Cloudflare'],
   },
 ]
 

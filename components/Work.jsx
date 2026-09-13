@@ -12,7 +12,7 @@ const companyProjects = [
       'Resolved Heroku H12 timeout issues with bounded network requests and hardened URL reachability validation while retaining protections for private and invalid URLs.',
     ],
     technologyLabel: 'Backend technologies & integrations',
-    tags: ['Node.js', 'Express.js', 'MongoDB', 'REST APIs', 'Socket.io / WebSockets', 'Cloudinary', 'Nodemailer', 'Heroku'],
+    tags: ['Node.js', 'Express.js', 'MongoDB', 'REST APIs', 'Socket.io / WebSockets', 'Cloudinary', 'Mailgun (email)', 'Heroku'],
   },
   {
     title: 'Tradeline Supply', link: 'https://tradelinesupply.com/',
